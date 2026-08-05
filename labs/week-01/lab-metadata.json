@@ -5,7 +5,7 @@
   "sourceOrigin": "migrated-repository",
   "originalRepoUrl": "https://github.com/<username>/<old-lab01-repo>",
   "originalCommit": "abc1234",
-  "pullRequestUrl": "",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/1",
   "submissionTag": "lab-01-submission-v1",
   "testStatus": "pass",
   "notes": "รัน hello.js และตรวจ environment แล้ว"
