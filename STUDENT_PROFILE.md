@@ -3,10 +3,10 @@
 | รายการ | ข้อมูล |
 |---|---|
 | รายวิชา | ENGSE203 การเขียนโปรแกรมสำหรับวิศวกรซอฟต์แวร์ |
-| รหัสนักศึกษา | STUDENT-ID |
-| ชื่อ-นามสกุล | ชื่อ-นามสกุล |
-| Section | SEC-X |
-| GitHub Username | GITHUB-USERNAME |
-| Repository | `engse203-student-labs-STUDENT-ID` |
-
-> ไฟล์นี้จะถูกปรับข้อมูลเมื่อรัน `npm run setup`
+| รหัสนักศึกษา | 68543210063 |
+| ชื่อ-นามสกุล | Natthanicha Pokkaew |
+| Section | SEC2 |
+| GitHub Username | 1Poirot |
+| Repository | `engse203-student-labs-68543210063` |
+| Mode | `new-course` |
+| Pages Hub | https://1Poirot.github.io/engse203-student-labs-68543210063/ |
