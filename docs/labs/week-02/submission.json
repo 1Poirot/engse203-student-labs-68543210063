@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 {
   "week": "week-02",
   "title": "Modern JavaScript Learning Dashboard",
@@ -12,4 +10,3 @@
   "testStatus": "pass",
   "notes": "รัน hello.js และตรวจ environment แล้ว"
 }
->>>>>>> lab/week-02
