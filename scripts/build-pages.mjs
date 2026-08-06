@@ -50,9 +50,7 @@ for (const week of labs) {
 
   const sourceUrl = `${repoUrl}/tree/lab/${week}/labs/${week}/source`;
   const prUrl = validHttpUrl(metadata.pullRequestUrl);
-  const pageUrl = `${pagesBase}/labs/${week}/`;
-  const sourceCount = (await meaningfulEntries(path.join(labRoot, "source"))).length;
-  const summary = { ...metadata, pageUrl, sourceUrl, hasPublish, sourceEntries: sourceCount };
+  const summary = { ...metadata };
   summaries.push(summary);
   await fs.writeFile(path.join(target, "submission.json"), `${JSON.stringify(summary, null, 2)}\n`, "utf8");
 
