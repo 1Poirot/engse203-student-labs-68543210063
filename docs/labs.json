@@ -9,11 +9,7 @@
     "pullRequestUrl": "",
     "submissionTag": "",
     "testStatus": "not-tested",
-    "notes": "LAB 1 ใช้ evidence report ได้โดยไม่ต้องมี web application",
-    "pageUrl": "https://1Poirot.github.io/engse203-student-labs-68543210063/labs/week-01/",
-    "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-01/labs/week-01/source",
-    "hasPublish": false,
-    "sourceEntries": 0
+    "notes": "LAB 1 ใช้ evidence report ได้โดยไม่ต้องมี web application"
   },
   {
     "week": "week-02",
@@ -25,11 +21,7 @@
     "pullRequestUrl": "",
     "submissionTag": "lab-02-submission-v1",
     "testStatus": "pass",
-    "notes": "รัน hello.js และตรวจ environment แล้ว",
-    "pageUrl": "https://1Poirot.github.io/engse203-student-labs-68543210063/labs/week-02/",
-    "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-02/labs/week-02/source",
-    "hasPublish": true,
-    "sourceEntries": 13
+    "notes": "รัน hello.js และตรวจ environment แล้ว"
   },
   {
     "week": "week-03",
@@ -40,12 +32,8 @@
     "originalCommit": "",
     "pullRequestUrl": "",
     "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": "Static site ต้องมี index.html ที่ publish root",
-    "pageUrl": "https://1Poirot.github.io/engse203-student-labs-68543210063/labs/week-03/",
-    "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-03/labs/week-03/source",
-    "hasPublish": false,
-    "sourceEntries": 0
+    "testStatus": "pass",
+    "notes": "Static site ต้องมี index.html ที่ publish root"
   },
   {
     "week": "week-04",
@@ -57,10 +45,6 @@
     "pullRequestUrl": "",
     "submissionTag": "",
     "testStatus": "not-tested",
-    "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub",
-    "pageUrl": "https://1Poirot.github.io/engse203-student-labs-68543210063/labs/week-04/",
-    "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-04/labs/week-04/source",
-    "hasPublish": false,
-    "sourceEntries": 0
+    "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub"
   }
 ]

@@ -1,6 +1,7 @@
 {
   "week": "week-01",
   "title": "Developer Environment & GitHub Repository Setup",
+<<<<<<< Updated upstream
   "status": "draft",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
@@ -13,4 +14,18 @@
   "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-01/labs/week-01/source",
   "hasPublish": false,
   "sourceEntries": 0
+=======
+  "status": "ready",
+  "sourceOrigin": "migrated-repository",
+  "originalRepoUrl": "https://github.com/1Poirot/engse203-lab01-68543210063-2",
+  "originalCommit": "2b0a533",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/1",
+  "submissionTag": "lab-01-submission-v1",
+  "testStatus": "pass",
+  "notes": "รัน hello.js และตรวจ environment แล้ว",
+  "pageUrl": "https://1Poirot.github.io/engse203-student-labs-68543210063/labs/week-01/",
+  "sourceUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-01/labs/week-01/source",
+  "hasPublish": false,
+  "sourceEntries": 5
+>>>>>>> Stashed changes
 }
