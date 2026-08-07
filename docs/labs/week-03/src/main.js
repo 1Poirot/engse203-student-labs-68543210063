@@ -1,6 +1,5 @@
 import "./style.css";
 
-
 const form = document.querySelector("#request-form");
 
 // TODO 1: query preview/status/list elements
