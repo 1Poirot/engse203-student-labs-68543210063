@@ -56,3 +56,52 @@ form > button, .filter-active { border: 0; border-radius: .6rem; padding: .65rem
 
 /* TODO LAB4-R12: เพิ่ม focus-visible, aria-invalid และ state/badge styles */
 
+
+.request-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .65rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 800;
+  border: 1px solid transparent;
+}
+
+/* ความเร่งด่วน */
+.badge-urgent {
+  color: #b42318;
+  background: #feeceb;
+  border-color: #f5b7b1;
+}
+
+.badge-normal {
+  color: #1768c4;
+  background: #eef4fb;
+  border-color: #c8d8eb;
+}
+
+/* สถานะ */
+.badge-pending {
+  color: #8a5a00;
+  background: #fff4cc;
+  border-color: #f1d27a;
+}
+
+.badge-progress {
+  color: #1768c4;
+  background: #e8f1ff;
+  border-color: #a9c7ed;
+}
+
+.badge-completed {
+  color: #18794e;
+  background: #e9f7ef;
+  border-color: #a8dfbf;
+}

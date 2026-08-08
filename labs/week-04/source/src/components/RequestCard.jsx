@@ -1,16 +1,40 @@
 function RequestCard({ request, onDeleteRequest }) {
   return (
-    <article className="request-card">
-      <div>
-        <p className="request-id">{request.id}</p>
-        <h3>{request.requestType}</h3>
-        <p>{request.location}</p>
-        <p>{request.details}</p>
-      </div>
-      <button type="button" onClick={() => onDeleteRequest(request.id)}>
-        ลบ
-      </button>
-    </article>
+    <div className="request-card">
+  <div>
+    <div className="request-id">{request.id}</div>
+
+    <h3>{request.type}</h3>
+
+    <p>{request.location}</p>
+
+    <p>{request.detail}</p>
+
+    <div className="request-meta">
+      <span
+        className={`badge ${
+          request.urgent ? "badge-urgent" : "badge-normal"
+        }`}
+      >
+        {request.urgent ? "เร่งด่วน" : "ปกติ"}
+      </span>
+
+      <span
+        className={`badge ${
+          request.status === "รอดำเนินการ"
+            ? "badge-pending"
+            : request.status === "กำลังดำเนินการ"
+              ? "badge-progress"
+              : "badge-completed"
+        }`}
+      >
+        {request.status}
+      </span>
+    </div>
+  </div>
+
+  <button>ลบ</button>
+</div>
   );
 }
 
