@@ -2,7 +2,7 @@
 
 ## ผู้จัดทำ
 
-- ชื่อ–นามสกุล: ณํฐณิชา ปกแก้ว
+- ชื่อ–นามสกุล: ณัฐณิชา ปกแก้ว
 - รหัสนักศึกษา: 68543210063-2
 - Section: SEC2
 
@@ -18,10 +18,10 @@
 App (Owns requests, statusFilter state)
 ├── AppHeader
 ├── SummaryPanel (Receives summary props)
-├── RequestForm (Receives onAddRequest callback, owns formData/errors state)
-├── FilterBar (Receives value props, onFilterChange callback)
-└── RequestList (Receives requests props, onDeleteRequest callback)
-    └── RequestCard (Receives request props, onDeleteRequest callback)
+├── RequestForm 
+├── FilterBar 
+└── RequestList 
+    └── RequestCard 
 ```
 
 ## Setup และ Run
