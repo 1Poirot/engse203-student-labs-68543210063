@@ -1,9 +1,10 @@
-
 function RequestCard({ request, onDeleteRequest }) {
   return (
     <article className="request-card">
-      <div>
-        <p className="request-id">{request.id}</p>
+      <div className="request-content">
+        <div className="request-header">
+          <strong>{request.id}</strong>
+        </div>
 
         <h3>{request.requestType}</h3>
 
@@ -55,4 +56,3 @@ function RequestCard({ request, onDeleteRequest }) {
 }
 
 export default RequestCard;
-
