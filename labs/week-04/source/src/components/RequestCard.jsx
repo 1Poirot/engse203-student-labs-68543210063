@@ -1,3 +1,4 @@
+
 function RequestCard({ request, onDeleteRequest }) {
   return (
     <article className="request-card">
@@ -13,7 +14,6 @@ function RequestCard({ request, onDeleteRequest }) {
         <p>{request.details}</p>
 
         <div className="request-meta">
-          {/* ความเร่งด่วน */}
           <span
             className={
               request.priority === "urgent"
@@ -26,7 +26,6 @@ function RequestCard({ request, onDeleteRequest }) {
               : "🔵 ปกติ"}
           </span>
 
-          {/* สถานะ */}
           <span
             className={`badge ${
               request.status === "pending"
