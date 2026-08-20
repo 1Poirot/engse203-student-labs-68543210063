@@ -66,6 +66,7 @@ export function readStoredRequests() {
 }
 
 
+
 /**
  * TODO 5B-B · เขียนข้อมูลลงที่เก็บ
  *
@@ -75,22 +76,17 @@ export function readStoredRequests() {
  *   3. อย่าลืมว่าที่เก็บรับได้แต่ข้อความ
  */
 export function writeStoredRequests(requests) {
-  void requests;
+  if (!validateRequests(requests)) {
+    throw new Error('ไม่สามารถบันทึกข้อมูลคำร้องที่ไม่ตรง schema ได้');
+  }
 
-  validateRequests(requests);
-
-  const envelope = {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({
     schemaVersion: SCHEMA_VERSION,
     updatedAt: new Date().toISOString(),
-    requests: [...requests]
-  };
-
-
-  //setItem(object);
-  localStorage.setItem(JSON.stringify(envelope));
-
-  throw new Error('TODO 5B-B: writeStoredRequests');
+    requests: structuredClone(requests),
+  }));
 }
+
 
 
 /**
