@@ -50,19 +50,19 @@ function DashboardPage() {
     completed: requests.filter((request) => request.status === 'completed').length,
   }), [requests]);
 
- const normalizedSearchText = searchText.trim().toLowerCase();
+  const normalizedSearchText = searchText.trim().toLowerCase();
 
-const filteredRequests = requests.filter((request) => {
-  const matchesStatus =
-    statusFilter === 'all' || request.status === statusFilter;
+  const filteredRequests = requests.filter((request) => {
+    const matchesStatus =
+      statusFilter === 'all' || request.status === statusFilter;
 
-  const matchesSearch =
-    normalizedSearchText === ''
-    || request.requestType.toLowerCase().includes(normalizedSearchText)
-    || request.location.toLowerCase().includes(normalizedSearchText);
+    const matchesSearch =
+      normalizedSearchText === ''
+      || request.requestType.toLowerCase().includes(normalizedSearchText)
+      || request.location.toLowerCase().includes(normalizedSearchText);
 
-  return matchesStatus && matchesSearch;
-});
+    return matchesStatus && matchesSearch;
+  });
 
   async function handleDelete(requestId) {
     try {
@@ -84,6 +84,20 @@ const filteredRequests = requests.filter((request) => {
       setNotice('คืนข้อมูลตัวอย่างเริ่มต้นแล้ว');
     } catch (error) {
       setNotice(error instanceof Error ? error.message : 'คืนข้อมูลไม่สำเร็จ');
+    }
+  }
+
+  async function handleAcknowledge(requestId) {
+    try {
+      const nextRequests = await updateRequestStatus(requestId, 'in-progress');
+      setRequests(nextRequests);
+      setNotice(`รับเรื่อง ${requestId} แล้ว`);
+    } catch (error) {
+      setNotice(
+        error instanceof Error
+          ? error.message
+          : 'รับเรื่องไม่สำเร็จ',
+      );
     }
   }
 
@@ -116,15 +130,20 @@ const filteredRequests = requests.filter((request) => {
               value={searchText}
               onChange={(event) => setSearchText(event.target.value)}
             />
+
+            {filteredRequests.length === 0 && normalizedSearchText !== '' ? (
+              <p className="subtle-empty">ไม่พบคำร้องที่ตรงกับการค้นหา</p>
+            ) : (
+              <RequestList
+                requests={filteredRequests}
+                onDeleteRequest={handleDelete}
+                onAcknowledge={handleAcknowledge}
+              />
+            )}
             {/* TODO B3: ส่ง onAcknowledge={handleAcknowledge} ให้ RequestList เพื่อให้การ์ด pending มีปุ่ม "รับเรื่อง" */}
-           {filteredRequests.length === 0 && normalizedSearchText !== '' ? (
-  <p className="subtle-empty">ไม่พบคำร้องที่ตรงกับการค้นหา</p>
-) : (
-  <RequestList
-    requests={filteredRequests}
-    onDeleteRequest={handleDelete}
-  />
-)}
+
+
+
           </section>
         </>
       )}
