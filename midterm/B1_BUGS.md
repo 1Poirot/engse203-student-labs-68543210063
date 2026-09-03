@@ -32,12 +32,12 @@
 
 | # | อาการ (ให้มาแล้ว) | ไฟล์ : บรรทัด | สาเหตุ (ทำไมผิด) | แก้อย่างไร |
 |---|---|---|---|---|
-| 1 | Console เตือนสีเหลืองเรื่องรายการ (list) ที่แผงสรุป |  |  |  |
-| 2 | ตัวเลข "เสร็จสิ้น" ในแผงสรุปไม่ตรงกับที่เห็นจริง |  |  |  |
-| 3 | กดตัวกรองสถานะใด ๆ แล้วผลไม่เปลี่ยน (เหมือนกรองไม่ทำงาน) |  |  |  |
-| 4 | เปลี่ยน URL `REQ-101` → `REQ-102` แล้วข้อมูลไม่เปลี่ยน |  |  |  |
-| 5 | กด "ลบ" แล้วการ์ดหาย แต่ตัวเลขในแผงสรุปไม่ลด |  |  |  |
-| 6 | กด "ลบ" แล้วหน้าพัง/ว่างเปล่า |  |  |  |
+| 1 | Console เตือนสีเหลืองเรื่องรายการ (list) ที่แผงสรุป | SummaryPanel.jsx : จุดที่ใช้ .map() | รายการที่สร้างด้วย .map() ไม่มี key ที่ React ใช้ระบุแต่ละรายการ ทำให้ React เตือนเรื่อง list key | เพิ่ม key ให้ element ที่สร้างใน .map() เช่น {items.map((item) => <div key={item.id}>...</div>)} |
+| 2 | ตัวเลข "เสร็จสิ้น" ในแผงสรุปไม่ตรงกับที่เห็นจริง | DashboardPage.jsx : ส่วน summary | การคำนวณจำนวนสถานะ completed อ้างอิงเงื่อนไขหรือชื่อสถานะไม่ตรงกับข้อมูลจริง ทำให้จำนวนที่แสดงผิด | ตรวจให้ใช้สถานะเดียวกับข้อมูลจริง เช่น requests.filter((request) => request.status === 'completed').length |
+| 3 | กดตัวกรองสถานะใด ๆ แล้วผลไม่เปลี่ยน (เหมือนกรองไม่ทำงาน) | DashboardPage.jsx : ส่วน filteredRequests | มีการสร้าง statusFilter และ filteredRequests แต่ต้องนำ statusFilter ไปตรวจสอบกับ request.status หากใช้ค่าผิดหรือไม่ได้ส่งค่าจาก FilterBar ผลลัพธ์จะไม่เปลี่ย |  ช้เงื่อนไข `statusFilter === 'all'|
+| 4 | เปลี่ยน URL `REQ-101` → `REQ-102` แล้วข้อมูลไม่เปลี่ยน | DashboardPage.jsx : useEffect() |useEffect ต้องติดตามค่าที่มาจาก URL (scenario) หาก URL เปลี่ยนแต่ dependency ไม่เปลี่ยน React จะไม่เรียก getRequests() ใหม่| ใส่ scenario ใน dependency เช่น }, [scenario, reloadKey]); |
+| 5 | กด "ลบ" แล้วการ์ดหาย แต่ตัวเลขในแผงสรุปไม่ลด | DashboardPage.jsx : handleDelete() | ถ้าลบเฉพาะการ์ด/ข้อมูลที่แสดง แต่ไม่ได้อัปเดต state หลัก requests ค่า summary ซึ่งคำนวณจาก requests จะยังเป็นค่าเดิม | หลังลบให้ setRequests(nextRequests) เช่น const nextRequests = await deleteRequest(requestId); setRequests(nextRequests); |
+| 6 | กด "ลบ" แล้วหน้าพัง/ว่างเปล่า | DashboardPage.jsx : handleDelete() / requestService.js | ข้อมูลที่ได้กลับมาหลังลบอาจไม่ใช่ array แต่โค้ดนำไปใช้กับ .filter() หรือ .map() ทำให้เกิด TypeError เช่น requests.filter is not a function |ตรวจให้ deleteRequest() คืนค่าเป็น array และก่อนใช้ตรวจข้อมูล เช่น if (!Array.isArray(data)) ... แล้วค่อย setRequests(data)|
 
 ---
 
