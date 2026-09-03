@@ -50,7 +50,7 @@ function DashboardPage() {
     completed: requests.filter((request) => request.status === 'completed').length,
   }), [requests]);
 
-  const normalizedSearchText = searchText.trim().toLowerCase();
+ const normalizedSearchText = searchText.trim().toLowerCase();
 
 const filteredRequests = requests.filter((request) => {
   const matchesStatus =
