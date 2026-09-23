@@ -60,8 +60,13 @@
     "notes": ""
   },
   {
+<<<<<<< HEAD
     "week": "week-05",
     "title": "React Mini App",
+=======
+    "week": "week-06",
+    "title": "Campus Service API",
+>>>>>>> origin/HEAD
     "status": "draft",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
