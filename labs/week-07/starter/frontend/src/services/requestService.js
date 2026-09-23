@@ -17,11 +17,7 @@ export { ApiError };
  *   ใช้ encodeURIComponent() ป้องกันอักขระพิเศษ
  */
 export async function getRequests(options = {}) {
-  if (options.scenario === 'error') throw new ApiError('LAB scenario: จำลองการโหลดไม่สำเร็จ', 500);
-  if (options.scenario === 'empty') return [];
-
-  const query = options.status ? `?status=${encodeURIComponent(options.status)}` : '';
-  return apiFetch(`/api/requests${query}`);
+  throw new Error('TODO W07-F3: getRequests');
 }
 
 /**
@@ -31,13 +27,7 @@ export async function getRequests(options = {}) {
  *   คำใบ้: จับด้วย try/catch แล้วเช็ค error.status === 404
  */
 export async function getRequestById(requestId) {
-  try {
-    return await apiFetch(`/api/requests/${encodeURIComponent(requestId)}`);
-  } catch (error) {
-    // 404 ไม่ใช่ความผิดพลาดของระบบ — แปลว่าไม่มีคำร้องรหัสนี้
-    if (error instanceof ApiError && error.status === 404) return null;
-    throw error;   // error อื่นปล่อยผ่านไปให้หน้าจอจัดการ
-  }
+  throw new Error('TODO W07-F4: getRequestById');
 }
 
 /**
@@ -46,7 +36,7 @@ export async function getRequestById(requestId) {
  * - ส่ง body ด้วย JSON.stringify(requestInput)
  */
 export async function addRequest(requestInput) {
-  return apiFetch('/api/requests', { method: 'POST', body: JSON.stringify(requestInput) });
+  throw new Error('TODO W07-F5: addRequest');
 }
 
 /**
@@ -63,8 +53,7 @@ export async function updateRequestStatus(requestId, status) {
  *   เพื่อให้หน้าจอตรงกับข้อมูลจริงเสมอ ไม่ใช่เดาเอาเองว่าเหลืออะไร
  */
 export async function deleteRequest(requestId) {
-  await apiFetch(`/api/requests/${encodeURIComponent(requestId)}`, { method: 'DELETE' });
-  return getRequests();   // คืนรายการล่าสุดจากเซิร์ฟเวอร์
+  throw new Error('TODO W07-F7: deleteRequest');
 }
 
 /** Week 07 ยังไม่มี endpoint reset — โหลดรายการปัจจุบันกลับมาแทน */
