@@ -1,0 +1,74 @@
+[
+  {
+    "week": "week-01",
+    "title": "Developer Environment & GitHub Repository Setup",
+    "status": "ready",
+    "sourceOrigin": "migrated-repository",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab01-68543210063-2",
+    "originalCommit": "2b0a533",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/1",
+    "submissionTag": "lab-01-submission-v1",
+    "testStatus": "pass",
+    "notes": "รัน hello.js และตรวจ environment แล้ว"
+  },
+  {
+    "week": "week-02",
+    "title": "Modern JavaScript Learning Dashboard",
+    "status": "ready",
+    "sourceOrigin": "migrated-repository",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab02-68543210063-2",
+    "originalCommit": "8ddfb6c",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/3",
+    "submissionTag": "lab-02-submission-v1",
+    "testStatus": "pass",
+    "notes": "รัน hello.js และตรวจ environment แล้ว"
+  },
+  {
+    "week": "week-03",
+    "title": "Responsive Web UI & Form Interaction",
+    "status": "ready",
+    "sourceOrigin": "course-starter",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab03-68543210063-2",
+    "originalCommit": "79dddc8",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/2",
+    "submissionTag": "lab-03-submission-v1",
+    "testStatus": "pass",
+    "notes": "Static site ต้องมี index.html ที่ publish root"
+  },
+  {
+    "week": "week-04",
+    "title": "React Campus Service Request",
+    "status": "draft",
+    "sourceOrigin": "course-starter",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
+    "originalCommit": "f09b3a0",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/4",
+    "submissionTag": "lab-04-submission-v1",
+    "testStatus": "pass",
+    "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub"
+  },
+  {
+    "week": "week-05",
+    "title": "React Mini App",
+    "status": "draft",
+    "sourceOrigin": "course-starter",
+    "originalRepoUrl": "",
+    "originalCommit": "",
+    "pullRequestUrl": "",
+    "submissionTag": "",
+    "testStatus": "not-tested",
+    "notes": ""
+  },
+  {
+    "week": "week-05",
+    "title": "React Mini App",
+    "status": "draft",
+    "sourceOrigin": "course-starter",
+    "originalRepoUrl": "",
+    "originalCommit": "",
+    "pullRequestUrl": "",
+    "submissionTag": "",
+    "testStatus": "not-tested",
+    "notes": ""
+  }
+]
