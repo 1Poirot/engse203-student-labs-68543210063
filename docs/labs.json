@@ -26,7 +26,7 @@
   {
     "week": "week-03",
     "title": "Responsive Web UI & Form Interaction",
-    "status": "submission-complete",
+    "status": "submission",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab03-68543210063-2",
     "originalCommit": "79dddc8",
@@ -38,7 +38,7 @@
   {
     "week": "week-04",
     "title": "React Campus Service Request",
-    "status": "submission-complete",
+    "status": "submission",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
     "originalCommit": "f09b3a0",
@@ -50,11 +50,11 @@
   {
     "week": "week-05",
     "title": "React Mini App",
-    "status": "submission-complete",
+    "status": "submission",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
+    "originalCommit": "013c2f95048a7de9dbe41aae5f4d963871f8627d",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/5",
     "submissionTag": "",
     "testStatus": "not-tested",
     "notes": ""
@@ -62,9 +62,21 @@
   {
     "week": "week-06",
     "title": "Campus Service API",
+    "status": "submission",
+    "sourceOrigin": "course-starter",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
+    "originalCommit": "",
+    "pullRequestUrl": "",
+    "submissionTag": "",
+    "testStatus": "not-tested",
+    "notes": ""
+  },
+  {
+    "week": "week-07",
+    "title": "Campus Service API",
     "status": "draft",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
     "originalCommit": "",
     "pullRequestUrl": "",
     "submissionTag": "",
