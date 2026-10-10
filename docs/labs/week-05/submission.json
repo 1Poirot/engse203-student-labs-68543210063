@@ -1,12 +1,12 @@
 {
   "week": "week-05",
-    "title": "React Mini App",
-    "status": "submission",
-    "sourceOrigin": "course-starter",
-    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
-    "originalCommit": "013c2f95048a7de9dbe41aae5f4d963871f8627d",
-    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/5",
-    "submissionTag": "lab-05-submission-v1",
-    "testStatus": "passnot-tested",
-    "notes": "รัน hello.js และตรวจ environment แล้ว"
+  "title": "React Mini App",
+  "status": "draft",
+  "sourceOrigin": "course-starter",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "",
+  "testStatus": "not-tested",
+  "notes": ""
 }
