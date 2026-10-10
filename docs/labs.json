@@ -2,7 +2,7 @@
   {
     "week": "week-01",
     "title": "Developer Environment & GitHub Repository Setup",
-    "status": "ready",
+    "status": "submission-complete",
     "sourceOrigin": "migrated-repository",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab01-68543210063-2",
     "originalCommit": "2b0a533",
@@ -14,7 +14,7 @@
   {
     "week": "week-02",
     "title": "Modern JavaScript Learning Dashboard",
-    "status": "ready",
+    "status": "submission-complete",
     "sourceOrigin": "migrated-repository",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab02-68543210063-2",
     "originalCommit": "8ddfb6c",
@@ -26,7 +26,7 @@
   {
     "week": "week-03",
     "title": "Responsive Web UI & Form Interaction",
-    "status": "ready",
+    "status": "submission-complete",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab03-68543210063-2",
     "originalCommit": "79dddc8",
@@ -38,7 +38,7 @@
   {
     "week": "week-04",
     "title": "React Campus Service Request",
-    "status": "draft",
+    "status": "submission-complete",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
     "originalCommit": "f09b3a0",
@@ -50,7 +50,7 @@
   {
     "week": "week-05",
     "title": "React Mini App",
-    "status": "draft",
+    "status": "submission-complete",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -60,13 +60,8 @@
     "notes": ""
   },
   {
-<<<<<<< HEAD
-    "week": "week-05",
-    "title": "React Mini App",
-=======
     "week": "week-06",
     "title": "Campus Service API",
->>>>>>> origin/HEAD
     "status": "draft",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
