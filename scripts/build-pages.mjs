@@ -50,6 +50,7 @@ for (const week of labs) {
     await fs.cp(publishRoot, target, { recursive: true });
   } else {
     const originalUrl = validHttpUrl(metadata.originalRepoUrl);
+    const liveDemoUrl = validHttpUrl(metadata.liveDemoUrl);
     const report = `<!doctype html>
 <html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(week)} — ${escapeHtml(metadata.title)}</title>
@@ -57,7 +58,7 @@ for (const week of labs) {
 <body><main><p><a href="../../index.html">← LAB Portfolio</a></p><span class="pill">${escapeHtml(statusLabels[metadata.status] ?? metadata.status)}</span>
 <h1>${escapeHtml(week)} — ${escapeHtml(metadata.title)}</h1><p>หน้านี้สรุปสถานะและลิงก์ไปยัง Source/Evidence ของ LAB งานประเภท API หรือฐานข้อมูลต้องรัน backend แยก จึงไม่สามารถให้ GitHub Pages เรียกใช้งาน API ในเครื่องได้</p>
 <div class="grid"><div class="card"><strong>Test Status</strong><p>${escapeHtml(metadata.testStatus)}</p></div><div class="card"><strong>Submission</strong><p>${escapeHtml(metadata.submissionTag || "ยังไม่ระบุ")}</p></div><div class="card"><strong>Original Commit</strong><p>${escapeHtml(metadata.originalCommit || "ยังไม่ระบุ")}</p></div></div>
-<div class="actions">${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}">View Source</a>` : ""}${evidenceUrl ? `<a href="${escapeHtml(evidenceUrl)}">View Evidence</a>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}">Original Repository</a>` : ""}</div>
+<div class="actions">${liveDemoUrl ? `<a href="${escapeHtml(liveDemoUrl)}" target="_blank" rel="noopener noreferrer">Live Demo</a>` : ""}${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}">View Source</a>` : ""}${evidenceUrl ? `<a href="${escapeHtml(evidenceUrl)}">View Evidence</a>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}">Original Repository</a>` : ""}</div>
 <p style="margin-top:22px;color:#52677c">${escapeHtml(metadata.notes || "")}</p></main></body></html>`;
     await fs.writeFile(path.join(target, "index.html"), report, "utf8");
   }
