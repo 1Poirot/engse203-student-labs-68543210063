@@ -73,7 +73,7 @@
   },
   {
     "week": "week-07",
-    "title": "Modern JavaScript Learning Dashboard",
+    "title": "React Frontend Connected to Campus Service API",
     "status": "submitted",
     "sourceOrigin": "migrated-repository",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab07-68543210063-2",
@@ -85,7 +85,7 @@
   },
   {
     "week": "week-09",
-    "title": "Campus Service API",
+    "title": "SQL Database Design and Queries",
     "status": "draft",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
@@ -97,7 +97,7 @@
   },
   {
     "week": "week-10",
-    "title": "Campus Service API",
+    "title": "Node.js API with SQLite",
     "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab10-68543210063-2",
@@ -109,7 +109,7 @@
   },
   {
     "week": "week-11",
-    "title": "Campus Service API",
+    "title": "Full-Stack Service Configuration and Deployment",
     "status": "draft",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
@@ -121,7 +121,7 @@
   },
   {
     "week": "week-12",
-    "title": "Campus Service API",
+    "title": "API Testing and Debugging",
     "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab12-68543210063-2",
@@ -133,7 +133,7 @@
   },
   {
     "week": "week-13",
-    "title": "Campus Service API",
+    "title": "Campus Service API Security and Authentication",
     "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
