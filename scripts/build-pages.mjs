@@ -50,52 +50,14 @@ for (const week of labs) {
     await fs.cp(publishRoot, target, { recursive: true });
   } else {
     const originalUrl = validHttpUrl(metadata.originalRepoUrl);
-    const week09Resources = week === "week-09"
-      ? [
-        ["คู่มือ In-Class", "แนวทาง CP17–CP21: SQL, สร้างตาราง, CRUD และ JOIN", "labs/week-09/LAB09_INCLASS_GUIDE_TH.md"],
-        ["คู่มือ Take-Home", "แนวทาง CP22–CP25: queries.sql, schema.sql และ constraints", "labs/week-09/LAB09_TAKEHOME_GUIDE_TH.md"],
-        ["SQL Playground Seed", "SQL ตัวอย่างสำหรับเริ่มทดลองใน SQLite playground", "labs/week-09/starter/playground-seed.sql"],
-        ["Queries Template", "ไฟล์โจทย์ query 8 ข้อและ Challenge สำหรับเติมคำสั่ง SQL", "labs/week-09/starter/queries.sql"],
-        ["Schema Template", "โครงสร้างฐานข้อมูลและโจทย์สำหรับสร้างตาราง users/requests", "labs/week-09/starter/schema.sql"],
-        ["Data Model Template", "แนวทางเอกสารออกแบบ users/requests", "labs/week-09/starter/DATA_MODEL.md"],
-        ["Checker", "สคริปต์ตรวจฐานข้อมูลและไฟล์ SQL", "labs/week-09/starter/check-week09.mjs"],
-        ["ฐานข้อมูล Starter", "ไฟล์ campus.db ที่ให้มาเพื่อใช้ตรวจ/ทดลอง", "labs/week-09/starter/campus.db"],
-      ]
-      : [];
-    const availableWeek09Resources = [];
-    for (const [title, description, filePath] of week09Resources) {
-      if (await exists(path.join(ROOT, filePath))) {
-        availableWeek09Resources.push({ title, description, filePath });
-      }
-    }
-    const week09Status = week === "week-09"
-      ? [
-        await exists(path.join(ROOT, "labs/week-09/starter/schema.sql"))
-          && (await fs.readFile(path.join(ROOT, "labs/week-09/starter/schema.sql"), "utf8")).includes("TODO W09-SCHEMA")
-          ? "<code>schema.sql</code> ยังมี TODO"
-          : "",
-        await exists(path.join(ROOT, "labs/week-09/starter/queries.sql"))
-          && (await fs.readFile(path.join(ROOT, "labs/week-09/starter/queries.sql"), "utf8")).includes("TODO W09-QUERY")
-          ? "<code>queries.sql</code> ยังมี TODO"
-          : "",
-        await exists(path.join(ROOT, "labs/week-09/starter/DATA_MODEL.md"))
-          && (await fs.readFile(path.join(ROOT, "labs/week-09/starter/DATA_MODEL.md"), "utf8")).includes("TODO W09-DOC")
-          ? "<code>DATA_MODEL.md</code> ยังมี TODO"
-          : "",
-      ].filter(Boolean)
-      : [];
-    const week09Content = week === "week-09"
-      ? `<section class="resources"><h2>เนื้อหา Week 09 ที่มีใน Repository</h2><p>Week 09 เป็นงาน SQL/ฐานข้อมูล ไม่ใช่เว็บแอป จึงแสดงคู่มือและไฟล์งานที่มีอยู่แทนหน้าแอป</p><div class="resource-grid">${availableWeek09Resources.map(({ title, description, filePath }) => `<a class="resource-card" href="${escapeHtml(`${repoUrl}/blob/main/${filePath}`)}"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(description)}</span></a>`).join("")}</div>${week09Status.length ? `<div class="starter-warning"><strong>สถานะไฟล์ปัจจุบัน:</strong> ${week09Status.join(" · ")} — หน้านี้แสดงไฟล์ตั้งต้นตามจริง ไม่ได้อ้างว่างานเสร็จแล้ว</div>` : ""}</section>`
-      : "";
     const report = `<!doctype html>
 <html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(week)} — ${escapeHtml(metadata.title)}</title>
-<style>body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#10253d;background:#eef4f8}main{max-width:1040px;margin:32px auto;padding:28px;background:#fff;border-radius:18px;box-shadow:0 12px 32px #0a27451c}a{color:#075ea8}h1,h2{color:#092746}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#e5f1fa;font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.actions a{padding:10px 14px;border-radius:8px;color:#fff;background:#1261a6;text-decoration:none}.resources{margin-top:28px;padding-top:20px;border-top:1px solid #d8e3ed}.resources>p{color:#52677c}.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}.resource-card{display:grid;gap:8px;padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc;text-decoration:none}.resource-card:hover{border-color:#1261a6;background:#edf5fc}.resource-card strong{color:#075ea8}.resource-card span{color:#52677c;font-size:.92rem}.starter-warning{margin-top:16px;padding:14px;border-left:4px solid #d99a1a;border-radius:6px;background:#fff8e8}</style></head>
+<style>body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#10253d;background:#eef4f8}main{max-width:920px;margin:32px auto;padding:28px;background:#fff;border-radius:18px;box-shadow:0 12px 32px #0a27451c}a{color:#075ea8}h1{color:#092746}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{padding:16px;border:1px solid #c7d8e6;border-radius:12px;background:#f6f9fc}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#e5f1fa;font-weight:700}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.actions a{padding:10px 14px;border-radius:8px;color:#fff;background:#1261a6;text-decoration:none}</style></head>
 <body><main><p><a href="../../index.html">← LAB Portfolio</a></p><span class="pill">${escapeHtml(statusLabels[metadata.status] ?? metadata.status)}</span>
 <h1>${escapeHtml(week)} — ${escapeHtml(metadata.title)}</h1><p>หน้านี้สรุปสถานะและลิงก์ไปยัง Source/Evidence ของ LAB งานประเภท API หรือฐานข้อมูลต้องรัน backend แยก จึงไม่สามารถให้ GitHub Pages เรียกใช้งาน API ในเครื่องได้</p>
 <div class="grid"><div class="card"><strong>Test Status</strong><p>${escapeHtml(metadata.testStatus)}</p></div><div class="card"><strong>Submission</strong><p>${escapeHtml(metadata.submissionTag || "ยังไม่ระบุ")}</p></div><div class="card"><strong>Original Commit</strong><p>${escapeHtml(metadata.originalCommit || "ยังไม่ระบุ")}</p></div></div>
 <div class="actions">${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}">View Source</a>` : ""}${evidenceUrl ? `<a href="${escapeHtml(evidenceUrl)}">View Evidence</a>` : ""}${originalUrl ? `<a href="${escapeHtml(originalUrl)}">Original Repository</a>` : ""}</div>
-${week09Content}
 <p style="margin-top:22px;color:#52677c">${escapeHtml(metadata.notes || "")}</p></main></body></html>`;
     await fs.writeFile(path.join(target, "index.html"), report, "utf8");
   }
