@@ -1,12 +1,12 @@
 {
   "week": "week-09",
   "title": "SQL Database Design and Queries",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
   "pullRequestUrl": "",
   "submissionTag": "",
-  "testStatus": "not-tested",
+  "testStatus": "pass",
   "notes": "Lab scaffold exists but no submission metadata recorded yet"
 }

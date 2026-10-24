@@ -56,7 +56,7 @@
     "originalCommit": "0ce9844",
     "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/10",
     "submissionTag": "lab-05-submission-v1",
-    "testStatus": "not-tested",
+    "testStatus": "pass",
     "notes": "พัฒนาระบบแจ้งปัญหาพื้นที่ส่วนกลางด้วย React และ React Router พร้อมจัดการข้อมูลผ่าน Service และ localStorage รองรับการสร้าง ลบ ค้นหา ดูรายละเอียด และกู้คืนข้อมูลคำร้อง"
   },
   {
@@ -86,13 +86,13 @@
   {
     "week": "week-09",
     "title": "SQL Database Design and Queries",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
     "submissionTag": "",
-    "testStatus": "not-tested",
+    "testStatus": "pass",
     "notes": "Lab scaffold exists but no submission metadata recorded yet"
   },
   {
@@ -110,13 +110,13 @@
   {
     "week": "week-11",
     "title": "Full-Stack Service Configuration and Deployment",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
     "submissionTag": "",
-    "testStatus": "not-tested",
+    "testStatus": "pass",
     "notes": "Week 11 starter is present; submission metadata not finalized yet"
   },
   {
@@ -125,6 +125,7 @@
     "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab12-68543210063-2",
+    "liveDemoUrl": "https://campus-service-68543210063.onrender.com",
     "originalCommit": "be6b5e01d2d6101e0775ffdbdcc9357a3e64fbee",
     "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/12",
     "submissionTag": "lab-12-submission-v1",

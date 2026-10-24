@@ -1,12 +1,12 @@
 {
   "week": "week-11",
   "title": "Full-Stack Service Configuration and Deployment",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
   "pullRequestUrl": "",
   "submissionTag": "",
-  "testStatus": "not-tested",
+  "testStatus": "pass",
   "notes": "Week 11 starter is present; submission metadata not finalized yet"
 }
