@@ -12,10 +12,18 @@ function NewRequestPage() {
 
   return (
     <section data-testid="page-new-request">
-      … page-heading …
+      <div className="page-heading">
+        <div>
+          <p className="eyebrow dark">ROUTED · WRITE PATH</p>
+          <h1>สร้างคำร้องใหม่</h1>
+          <p>กรอกรายละเอียดเพื่อส่งคำร้องบริการภายในมหาวิทยาลัย</p>
+        </div>
+      </div>
       <section className="panel form-panel">
         <RequestForm onAddRequest={handleAddRequest} />
       </section>
     </section>
   );
 }
+
+export default NewRequestPage;
