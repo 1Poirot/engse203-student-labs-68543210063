@@ -5,8 +5,8 @@
   "sourceOrigin": "migrated-repository",
   "originalRepoUrl": "https://github.com/1Poirot/engse203-lab07-68543210063-2",
   "originalCommit": "8ddfb6c",
-  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/3",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/8",
   "submissionTag": "lab-07-submission-v1",
   "testStatus": "pass",
-  "notes": ""
+  "notes": "React frontend connected to API with CORS, env config, contract, and tests"
 }

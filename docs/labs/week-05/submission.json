@@ -1,12 +1,12 @@
 {
   "week": "week-05",
   "title": "React Mini App",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
+  "originalRepoUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/main/labs/week-05/source",
+  "originalCommit": "0ce9844",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/10",
+  "submissionTag": "lab-05-submission-v1",
   "testStatus": "not-tested",
-  "notes": ""
+  "notes": "พัฒนาระบบแจ้งปัญหาพื้นที่ส่วนกลางด้วย React และ React Router พร้อมจัดการข้อมูลผ่าน Service และ localStorage รองรับการสร้าง ลบ ค้นหา ดูรายละเอียด และกู้คืนข้อมูลคำร้อง"
 }

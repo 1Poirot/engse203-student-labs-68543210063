@@ -1,12 +1,12 @@
 {
   "week": "week-13",
   "title": "Campus Service API",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
-  "testStatus": "not-tested",
-  "notes": ""
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/9",
+  "submissionTag": "lab-13-submission-v1",
+  "testStatus": "pass",
+  "notes": "Week 13 final campus service API work merged via PR #9"
 }

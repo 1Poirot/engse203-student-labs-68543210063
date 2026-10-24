@@ -38,7 +38,7 @@
   {
     "week": "week-04",
     "title": "React Campus Service Request",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab04-68543210063-2",
     "originalCommit": "f09b3a0",
@@ -50,26 +50,26 @@
   {
     "week": "week-05",
     "title": "React Mini App",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/main/labs/week-05/source",
+    "originalCommit": "0ce9844",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/10",
+    "submissionTag": "lab-05-submission-v1",
     "testStatus": "not-tested",
-    "notes": ""
+    "notes": "พัฒนาระบบแจ้งปัญหาพื้นที่ส่วนกลางด้วย React และ React Router พร้อมจัดการข้อมูลผ่าน Service และ localStorage รองรับการสร้าง ลบ ค้นหา ดูรายละเอียด และกู้คืนข้อมูลคำร้อง"
   },
   {
     "week": "week-06",
     "title": "Campus Service API",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": ""
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-06",
+    "originalCommit": "3d978e6f32ec0baaa6e923e68cfb5fa8d381deb9",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/6",
+    "submissionTag": "lab-06-submission-v1",
+    "testStatus": "pass",
+    "notes": "Express API starter completed and merged via PR #6"
   },
   {
     "week": "week-07",
@@ -78,10 +78,10 @@
     "sourceOrigin": "migrated-repository",
     "originalRepoUrl": "https://github.com/1Poirot/engse203-lab07-68543210063-2",
     "originalCommit": "8ddfb6c",
-    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/3",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/8",
     "submissionTag": "lab-07-submission-v1",
     "testStatus": "pass",
-    "notes": ""
+    "notes": "React frontend connected to API with CORS, env config, contract, and tests"
   },
   {
     "week": "week-09",
@@ -93,19 +93,19 @@
     "pullRequestUrl": "",
     "submissionTag": "",
     "testStatus": "not-tested",
-    "notes": ""
+    "notes": "Lab scaffold exists but no submission metadata recorded yet"
   },
   {
     "week": "week-10",
     "title": "Campus Service API",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": ""
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab10-68543210063-2",
+    "originalCommit": "e974110826ddec76233ea158e798e17e449129b3",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/10",
+    "submissionTag": "lab-10-submission-v1",
+    "testStatus": "pass",
+    "notes": "Node + SQLite campus service lab completed and tagged as lab-10-submission-v1"
   },
   {
     "week": "week-11",
@@ -117,30 +117,30 @@
     "pullRequestUrl": "",
     "submissionTag": "",
     "testStatus": "not-tested",
-    "notes": ""
+    "notes": "Week 11 starter is present; submission metadata not finalized yet"
   },
   {
     "week": "week-12",
     "title": "Campus Service API",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
-    "originalRepoUrl": "",
-    "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": ""
+    "originalRepoUrl": "https://github.com/1Poirot/engse203-lab12-68543210063-2",
+    "originalCommit": "be6b5e01d2d6101e0775ffdbdcc9357a3e64fbee",
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/12",
+    "submissionTag": "lab-12-submission-v1",
+    "testStatus": "pass",
+    "notes": "API bug-fix lab completed and tagged as lab-12-submission-v1"
   },
   {
     "week": "week-13",
     "title": "Campus Service API",
-    "status": "draft",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": ""
+    "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/9",
+    "submissionTag": "lab-13-submission-v1",
+    "testStatus": "pass",
+    "notes": "Week 13 final campus service API work merged via PR #9"
   }
 ]

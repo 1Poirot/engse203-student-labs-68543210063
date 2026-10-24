@@ -1,12 +1,12 @@
 {
   "week": "week-06",
   "title": "Campus Service API",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
-  "testStatus": "not-tested",
-  "notes": ""
+  "originalRepoUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/tree/lab/week-06",
+  "originalCommit": "3d978e6f32ec0baaa6e923e68cfb5fa8d381deb9",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/6",
+  "submissionTag": "lab-06-submission-v1",
+  "testStatus": "pass",
+  "notes": "Express API starter completed and merged via PR #6"
 }

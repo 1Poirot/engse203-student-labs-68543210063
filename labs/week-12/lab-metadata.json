@@ -1,12 +1,12 @@
 {
   "week": "week-12",
   "title": "Campus Service API",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
-  "testStatus": "not-tested",
-  "notes": ""
+  "originalRepoUrl": "https://github.com/1Poirot/engse203-lab12-68543210063-2",
+  "originalCommit": "be6b5e01d2d6101e0775ffdbdcc9357a3e64fbee",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/12",
+  "submissionTag": "lab-12-submission-v1",
+  "testStatus": "pass",
+  "notes": "API bug-fix lab completed and tagged as lab-12-submission-v1"
 }

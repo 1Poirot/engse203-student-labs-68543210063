@@ -1,12 +1,12 @@
 {
   "week": "week-10",
   "title": "Campus Service API",
-  "status": "draft",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
-  "originalRepoUrl": "",
-  "originalCommit": "",
-  "pullRequestUrl": "",
-  "submissionTag": "",
-  "testStatus": "not-tested",
-  "notes": ""
+  "originalRepoUrl": "https://github.com/1Poirot/engse203-lab10-68543210063-2",
+  "originalCommit": "e974110826ddec76233ea158e798e17e449129b3",
+  "pullRequestUrl": "https://github.com/1Poirot/engse203-student-labs-68543210063/pull/10",
+  "submissionTag": "lab-10-submission-v1",
+  "testStatus": "pass",
+  "notes": "Node + SQLite campus service lab completed and tagged as lab-10-submission-v1"
 }
